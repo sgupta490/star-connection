@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Star Connection </title>
+    <meta charset="windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="Star.css">
+
+    <script src="calculation.js"></script>
+    
+
+</head>
+
+<body>
+    <div class="container">
+        
+        <div style="font-size:30px; text-align:center;padding-right:100px; height:60px"> <b> STAR CONNECTION </b></div>
+        <div class="content">
+            <div class="input-area">
+                
+                <div class="diagram">
+                    <div class="main-diagram">
+                        <img src="Star.png"  alt = "Star connection ciruit"/>
+                        
+                    </div>
+                    <div>
+
+                        <input type="text" placeholder="Vline" id="VL">
+                        <input type="text" placeholder="Vphase" id="VP">
+                        <input type="number" placeholder="V" id="V">
+                        <input type="text" placeholder="A" id="A">
+                        </div>
+                    <div class="cal-btn">
+                        <button onclick="calculate();" id="simulate"> <b>SIMULATE</b> </button>&nbsp;
+                        <button onclick="addHTMLTableRow();" id="addTable"> <b>ADD TO TABLE</b> </button>&nbsp;
+ 
+                        <button onclick="clearRow();" id="Cr"> <b>CLEAR</b> </button> </button>
+                        
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>
+                <h3><u>OBSERVATION TABLE:</u></h3>
+                </p>
+            </div>
+            <div class="table-area">
+                <div>
+                    <table id="table">
+                        <thead>
+                            <tr>
+                                <th> Supply Voltage<br>(volt)</th>
+                                <th>I<br>(amp)</th>
+                                <th>Vline<br>(volt)</th>
+                                <th>Vphase<br>(volt)</th>
+                                <th id ="Vlp">Vline/Vphase<br> (volt)</th>
+                            </tr>
+                        </thead>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+
+</html>
